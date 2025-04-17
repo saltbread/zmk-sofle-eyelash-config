@@ -10,8 +10,8 @@ manifest:
       url-base: https://github.com/Arawasu
 
   projects:
-    - name: Arawasu
-      url: zmk-sofle-eyelash-config
+    - name: zmk-sofle-eyelash-config
+      url: https://github.com/Arawasu/zmk-sofle-eyelash-config
       revision: main
 
     - name: hammerbeam-slideshow
