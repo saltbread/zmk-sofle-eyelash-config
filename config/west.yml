@@ -1,0 +1,31 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+
+    - name: gpeye
+      url-base: https://github.com/GPeye
+
+    - name: Arawasu
+      url-base: https://github.com/Arawasu
+
+  projects:
+    - name: eyelash_sofle
+      url: https://github.com/Arawasu/zmk-sofle
+      revision: main
+
+    - name: hammerbeam-slideshow
+      remote: gpeye
+      revision: main
+
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+
+    - name: zmk-nice-oled
+      remote: Arawasu
+      revision: main
+
+  self:
+    path: config
