@@ -59,7 +59,10 @@
 
 /* ZMK_LAYER */
 
+// Patch: Allow display-name override
 #define ZMK_LAYER(...) CONCAT(ZMK_LAYER_, VARGS(__VA_ARGS__))(__VA_ARGS__)
+
+// 2-arg version: name, layout → default display-name from `_name`
 #define ZMK_LAYER_2(_name, layout) \
     / { \
         keymap { \
@@ -70,17 +73,32 @@
             }; \
         }; \
     };
-#define ZMK_LAYER_3(_name, layout, sensors) \
+
+// 3-arg version: name, layout, display_name (manual override)
+#define ZMK_LAYER_3(_name, layout, display_name) \
     / { \
         keymap { \
             compatible = "zmk,keymap"; \
             layer_ ## _name { \
-                display-name = ZMK_HELPER_STRINGIFY(_name); \
+                display-name = display_name; \
+                bindings = <layout>; \
+            }; \
+        }; \
+    };
+
+// 4-arg version: name, layout, sensors, display_name
+#define ZMK_LAYER_4(_name, layout, sensors, display_name) \
+    / { \
+        keymap { \
+            compatible = "zmk,keymap"; \
+            layer_ ## _name { \
+                display-name = display_name; \
                 bindings = <layout>; \
                 sensor-bindings = <sensors>; \
             }; \
         }; \
     };
+
 
 /* ZMK_COMBOS */
 
