@@ -34,6 +34,7 @@
 
 #define DLEFT  &kp LC(LG(LEFT_ARROW))
 #define DRIGHT &kp LC(LG(RIGHT_ARROW))
+#define HYPER &kp LC(LA(LG(LSHFT)))
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // Left-hand keys
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // Right-hand keys
@@ -161,7 +162,7 @@ ZMK_LAYER(BASE,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                      ├─────────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp LSHIFT    &kp Z         &kp X         &kp C         &kp V         &kp B                                 &kp RIGHT_ARROW     &kp N         &kp M         &kp COMMA     &kp PERIOD    &kp SLASH     &kp RSHIFT
   // ╰┬──────────┬─┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╮   ╭────┴─────╮╭──────────┴──┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼
-       &kp C_MUTE                 &kp LCTRL     &kp LGUI      &kp SPACE     &mo NAV       &kp ESC           &mkp MCLK   &kp ESC       &mo FN        &kp ENTER     &kp RALT      &kp MINUS
+       &kp C_MUTE                 &kp LCTRL     &kp LGUI      &kp SPACE     &mo NAV       &kp ESC           &mkp MCLK   HYPER         &mo FN        &kp ENTER     &kp RALT      &kp MINUS
   //  ╰──────────╯               ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰──────────╯╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
   //  ENCODER PRESS                                                                                         HAT PRESS
 , &vol_encoder, "BASE")
