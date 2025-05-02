@@ -60,7 +60,7 @@ layers:
   - NAV
   - $$mdi:keyboard-esc$$
   - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:keyboard-esc$$
+  - Ctl+Alt+Gui+$$mdi:apple-keyboard-shift$$
   - FN
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
