@@ -57,7 +57,7 @@
 &kp TAB      &kp Q      &kp W         &kp E         &kp R   &kp T     &mmv MOVE_DOWN   &kp Y      &kp U      &kp I           &kp O     &kp P      &kp BSLH
 &kp CAPS     &kp A      &kp S         &kp D         &kp F   &kp G     &mmv MOVE_LEFT   &kp H      &kp J      &kp K           &kp L     &kp SEMI   &kp APOS
 &kp LSHFT    &kp Z      &kp X         &kp C         &kp V   &kp B     &mmv MOVE_RIGHT  &kp N      &kp M      &kp COMMA       &kp DOT   &kp FSLH   &kp RSHFT
-&kp C_PAUSE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &tog 2    &mkp LCLK        &kp ENTER  &kp SPACE  &kp LANGUAGE_1  &kp RGUI  &kp RCTRL
+&kp C_PAUSE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &mo 2     &mkp LCLK        &kp ENTER  &kp SPACE  &kp LANGUAGE_1  &kp RGUI  &kp RCTRL
             >;
 
             sensor-bindings =
@@ -90,7 +90,7 @@
 &trans  &trans    &kp UP    &trans     &trans  &trans        &mmv MOVE_DOWN   &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9        &kp PLUS      &trans
 &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans        &mmv MOVE_LEFT   &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6        &kp KP_EQUAL  &trans
 &trans  &trans    &trans    &trans     &trans  &trans        &mmv MOVE_RIGHT  &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3        &kp ENTER     &trans
-&trans  &trans    &trans    &trans     &trans  &tog 0        &mkp LCLK        &trans  &trans      &kp KP_N0     &kp KP_N0        &kp KP_DOT
+&trans  &trans    &trans    &trans     &trans  &trans        &mkp LCLK        &trans  &trans      &kp KP_N0     &kp KP_N0        &kp KP_DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -102,7 +102,7 @@
 &trans        &trans          &trans        &trans        &trans        &bt BT_CLR_ALL    &mmv MOVE_DOWN   &trans  &trans  &trans     &trans      &trans       &trans
 &trans        &trans          &trans        &trans        &trans        &bt BT_CLR        &mmv MOVE_LEFT   &trans  &trans  &trans     &trans      &trans       &trans
 &trans        &trans          &trans        &trans        &trans        &trans            &mmv MOVE_RIGHT  &trans  &trans  &trans     &trans      &trans       &trans
-&trans        &studio_unlock  &sys_reset    &bootloader   &trans        &tog 0            &mkp LCLK        &trans  &trans  &soft_off  &sys_reset  &bootloader
+&trans        &studio_unlock  &sys_reset    &bootloader   &trans        &trans            &mkp LCLK        &trans  &trans  &soft_off  &sys_reset  &bootloader
             >;
 
             sensor-bindings = <&scroll_encoder>;
