@@ -1,0 +1,92 @@
+layout: {zmk_keyboard: eyelash_sofle}
+layers:
+  LAYER0: [ESC, N1, N2, N3, N4, N5, '&mmv MOVE_UP', N6, N7, N8, N9, N0, BACKSPACE, 
+                    TAB, Q, W, E, R, T, '&mmv MOVE_DOWN', Y, U, I, O, P, \, 
+                   CAPS, A, S, D, F, G, '&mmv MOVE_LEFT', H, J, K, L, ;, '''', 
+                  LSHFT, Z, X, C, V, B, '&mmv MOVE_RIGHT', N, M, ',', ., /, RSHFT, 
+  MUTE, 
+  LCTRL, LGUI, LALT, LAYER1, LAYER2, '&mkp LCLK', ENTER, SPACE, RALT, RGUI, RCNTRL]
+ 
+  LAYER1:
+  - ['`', F1, F2, F3, F4, F5, UP, F6, F7, F8, F9, F10, DEL]
+  - ['~', {t: ▽, type: trans},INSERT, HOME, PG UP, {t: ▽, type: trans}, DOWN, {t: ▽, type: trans},{ t: ▽, type: trans}, UP, {t: ▽, type: trans}, '-', '=']
+  - [{t: ▽, type: trans}, {t: ▽, type: trans}, DEL, END, PG DN, {t: ▽, type: trans}, LEFT,  {t: ▽, type: trans}, LEFT, DOWN, RIGHT, '[', ']']
+  - [RGB TOG, {t: ▽, type: trans}, RGB EFF, RGB HUI, RGB SAI, {t: ▽, type: trans}, RIGHT, {t: ▽, type: trans}, RGB SPI, RGB BRI, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+  - MUTE
+  - RGB EFR
+  - RGB HUD
+  - RGB SAD
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB SPD
+  - RGB BRD
+  - {t: ▽, type: trans}
+  
+  LAYER2:
+  - OUT TOG
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - '&mmv MOVE_UP'
+  - '&soft_off'
+  - KP_NUM
+  - /
+  - '*'
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_DOWN'
+  - '&sys_reset'
+  - N7
+  - N8
+  - N9
+  - _
+  - +
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&bootloader'
+  - N4
+  - N5
+  - N6
+  - '{'
+  - '}'
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans} 
+  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans} 
+  - N1
+  - N2
+  - N3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&studio_unlock'
+  - '&sys_reset'
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - '&mkp LCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - N0
+  - N0
+  - .
